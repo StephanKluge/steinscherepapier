@@ -10,14 +10,19 @@
 // ergebnis returnen
 // function mit console.log abspeichern
 
-// function getComputerChoice(){
+function getComputerChoice(){
+    function getRandomIntInclusive(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+      }
+    if (getRandomIntInclusive(0, 2) == 0) {
+        console.log("Stein");
+    } else if (getRandomIntInclusive(0, 2) == 1){
+        console.log("Schere");
+    } else if (getRandomIntInclusive(0, 2) == 2){
+        console.log("Papier");
+    };  
+};
+getComputerChoice();
 
-// };
-
-
-function getRandomIntInclusive(min, max) {
-    const minCeiled = Math.ceil(min);
-    const maxFloored = Math.floor(max);
-    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
-  }
-console.log(getRandomIntInclusive(0, 2));
