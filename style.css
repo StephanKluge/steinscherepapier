@@ -1,0 +1,27 @@
+/* jersey-10-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jersey 10';
+    font-style: normal;
+    font-weight: 400;
+    src: url('jersey-10-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #333;
+}
+div{
+    height: 100svh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D67F22;
+    font-family: 'Jersey 10', 'Times New Roman', Times, serif;
+    font-size: 4rem;
+}
